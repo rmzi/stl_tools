@@ -7,7 +7,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-# EXPOSE 80
-# ENV somevar ineed
-
-CMD [ "python", "./test.py" ]
+CMD [ "python", "./convert.py" ]

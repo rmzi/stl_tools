@@ -34,16 +34,16 @@ want to write Python code directly.
 Build the docker container using the command:
 
 ```
-  docker build -t stl_tools
+docker build -t stl_tools .
 ```
 
 and run the container using the command:
 
 ```
-docker run -v /tmp/output:/output -it stl /bin/bash
+docker run -v /tmp/convert:/convert -it stl /bin/bash
 ```
 
-** When using the container, any files placed in the `/output` folder of the container will be available in `/tmp/output` on the host.
+** When using the container, any files placed in the `/convert` folder of the container will be available in `/tmp/convert` on the host.
 
 ## Quickstart Examples:
 
